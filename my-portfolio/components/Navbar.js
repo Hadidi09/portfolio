@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import {Menu, Transition } from '@headlessui/react';
+import { Transition } from '@headlessui/react';
 
 const Navbar = () =>
 {
@@ -40,64 +40,76 @@ const Navbar = () =>
                     </svg>
                 </div>
                 <div className={largeur <= 768 ? "block" : "hidden"}>
-                    <Menu>
-                                <Menu.Button>
-                                    <button onClick={menuToggle} className="  to-red-800 rounded-3xl text-white bg-gray-900   ">
-                                        
-                                        {!toggle ? <>
-                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                                        </svg>
-                                        </> :
-                                            <>
-                                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                                                </svg>
-                                        </>}
-                                    
+                    
+                        <button onClick={menuToggle} className="  to-red-800 rounded-3xl text-white bg-gray-900   ">
+                            
+                            {!toggle ? <>
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            </> :
+                                <>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                            </>}
+                        
 
-                                    </button>
-                                    <Transition
-                                
-                                    enter="transition-opacity duration-5000"
-                                    enterFrom="opacity-100"
-                                    enterTo="opacity-0"
-                                    leave="transition-opacity duration-5000"
-                                    leaveFrom="opacity-0"
-                                    leaveTo="opacity-0"
-                                >
-                                    <Menu.Item>
-                                        <div className={largeur >= 769 ? "inline-grid grid-cols-3 gap-x-10 p-4 " : "hidden"}>
-                            
-                                            <Link href="/">
-                                                <button className="px-2 rounded-3xl bg-gray-900 text-white">Projets</button>
-                                            </Link>
-                                    
-                                            <Link href="/">
-                                                <button className="px-2 rounded-3xl bg-gray-900 text-white">Formations</button>
-                                            </Link>
-                                    
-                                            <Link href="/">
-                                                <button className="px-2 rounded-3xl bg-gray-900 text-white">Expériences</button>
-                                            </Link>
-                            
-                                        </div>
-                                        </Menu.Item>
-                                        <Menu.Item>
-                                            
-                                    </Menu.Item>
-                                </Transition>
-                                </Menu.Button> 
+                        </button>
+               
                         
                    
-                            </Menu>
-                        </div>
+                    
+                    </div>
                 
         
-                   
-            </div>
+                    <div className={largeur >= 769 ? "inline-grid grid-cols-3 gap-x-10 p-4 " : "hidden"}>
             
-           
+                        <Link href="/">
+                            <button className="px-2 rounded-3xl bg-gray-900 text-white">Projets</button>
+                        </Link>
+                
+                        <Link href="/">
+                            <button className="px-2 rounded-3xl bg-gray-900 text-white">Formations</button>
+                        </Link>
+                
+                        <Link href="/">
+                            <button className="px-2 rounded-3xl bg-gray-900 text-white">Expériences</button>
+                        </Link>
+                        
+                    </div>
+            </div>
+            <>
+            <Transition
+        show={toggle}
+        enter="transition-opacity duration-1000"
+        enterFrom="opacity-50"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-500"
+        leaveFrom="opacity-50"
+        leaveTo="opacity-0"
+      >
+        <div className=" flex justify-center">
+               
+                        <div className="navigation flex justify-center flex-col ">
+                            <Link href="/">
+                                <button className="my-2 p-2 rounded-3xl bg-gray-900 text-white">Projets</button>
+                            </Link>
+                    
+                            <Link href="/">
+                                <button className="my-2 p-2 rounded-3xl bg-gray-900 text-white">Formations</button>
+                            </Link>
+                    
+                            <Link href="/">
+                                <button className="my-2 p-2 rounded-3xl bg-gray-900 text-white">Expériences</button>
+                            </Link>
+                        </div>
+                
+            </div>
+      </Transition>
+            </>
+            
+            
             
            
             
