@@ -82,12 +82,12 @@ const Navbar = () =>
             <>
             <Transition
         show={toggle}
-        enter="transition-opacity duration-1000"
+        enter="transition-opacity ease-in-out duration-1000"
         enterFrom="opacity-50"
         enterTo="opacity-100"
-        leave="transition-opacity duration-500"
-        leaveFrom="opacity-50"
-        leaveTo="opacity-0"
+        leave="transition-opacity ease-out duration-1500"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-50"
       >
         <div className=" flex justify-center">
                
