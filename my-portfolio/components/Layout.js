@@ -11,7 +11,7 @@ const Layout = ({ children, page}) => {
             <header>
                 <Navbar />
             </header>
-            <main>{children}</main>
+            <main className="bg-gradient-to-t from-gray-900 via-gray-500 to-gray-900  ">{children}</main>
             <footer>
                 <Footer />
             </footer>

@@ -93,11 +93,11 @@ const Navbar = () =>
                
                         <div className="navigation flex justify-center flex-col ">
                             <Link href="/">
-                                <button className="my-2 p-2 rounded-3xl bg-gray-900 text-white">Projets</button>
+                                <button className="my-2 p-2 rounded-3xl bg-gray-900 text-white">Description</button>
                             </Link>
                     
                             <Link href="/">
-                                <button className="my-2 p-2 rounded-3xl bg-gray-900 text-white">Formations</button>
+                                <button className="my-2 p-2 rounded-3xl bg-gray-900 text-white">Projets</button>
                             </Link>
                     
                             <Link href="/">
