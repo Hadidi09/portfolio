@@ -6,6 +6,7 @@ import Nature from '../public/nature.jpg';
 import Dev from "../public/dev.png";
 import CV from "../public/cvtech.png";
 import Fade from "react-reveal/Fade";
+import Resume from "./Resume";
 
 
 const Projets = () =>
@@ -19,7 +20,7 @@ const Projets = () =>
                 <h2 className=" bg-gray-800 text-white rounded-3xl px-4 py-2 cursor-pointer hover:bg-gray-100 hover:text-gray-900  ">Mes Projets</h2>
             </div>
             
-            <div className="card-maquette grid grid-cols-2" >
+            <div className="card-maquette md:grid grid-cols-2 gap-1 sm:flex flex-col items-center" >
                 
                 <div className="cards-contents bg-gray-400 p-10 m-6 w-max cursor-pointer rounded-3xl shadow-xl transiton duration-1000 ease-in-out transform hover:scale-110 ">
                
@@ -90,6 +91,11 @@ const Projets = () =>
                 {/* <Carousel /> */}
                
             </div>
+            
+                <Resume />
+                
+            
+            
         </div>
         
     );
