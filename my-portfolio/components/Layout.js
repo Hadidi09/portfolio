@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 const Layout = ({ children, page}) => {
     return (
-        <div className="w-full grid ">
+        <div className="w-full grid m-0 p-0 ">
             <Head>
                 <title>{ page}</title>
             </Head>

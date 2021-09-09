@@ -15,14 +15,14 @@ const Projets = () =>
     //     {"img": raquette,"img": Dev, "img": Nature, "img": CV }
     // ]
     return (
-        <div className="contentprojet flex flex-col justify-center pt-6  ">
+        <div className="contentprojet flex flex-col justify-center pt-6  lg:items-center ">
             <div className="flex justify-center">
                 <h2 className=" bg-gray-800 text-white rounded-3xl px-4 py-2 cursor-pointer hover:bg-gray-100 hover:text-gray-900  ">Mes Projets</h2>
             </div>
             
             <div className="card-maquette md:grid grid-cols-2 gap-1 sm:flex flex-col items-center" >
                 
-                <div className="cards-contents bg-gray-400 p-10 m-6 w-max cursor-pointer rounded-3xl shadow-xl transiton duration-1000 ease-in-out transform hover:scale-110 ">
+                <div className="cards-contents bg-gray-400 p-10 m-6 w-max md:w-11/12 md:m-1 lg:w-max lg:m-6  cursor-pointer rounded-3xl shadow-xl transiton duration-1000 ease-in-out transform hover:scale-110 ">
                
                     <div className="content-maquette  " >
                         
@@ -41,7 +41,7 @@ const Projets = () =>
                    
                     
                 </div>
-                <div className="cards-contents bg-gray-400 p-10 m-6 w-max cursor-pointer rounded-3xl shadow-xl transiton duration-1000 ease-in-out transform hover:scale-110 ">
+                <div className="cards-contents bg-gray-400 p-10 m-6 w-max md:w-11/12 md:m-1 lg:w-max lg:m-6  cursor-pointer rounded-3xl shadow-xl transiton duration-1000 ease-in-out transform hover:scale-110 ">
                     <Fade right>
                         <div className="content-maquette  " >
                    
@@ -62,7 +62,7 @@ const Projets = () =>
               
                
                 </div>
-                <div className="cards-contents bg-gray-400 p-10 m-6 w-max cursor-pointer rounded-3xl shadow-xl transiton duration-1000 ease-in-out transform hover:scale-110 ">
+                <div className="cards-contents bg-gray-400 p-10 m-6 w-max md:w-11/12 md:m-1 lg:w-max lg:m-6  cursor-pointer rounded-3xl shadow-xl transiton duration-1000 ease-in-out transform hover:scale-110 ">
                     <Fade right>
                         <div className="content-maquette  " >
                    
@@ -91,7 +91,9 @@ const Projets = () =>
                 {/* <Carousel /> */}
                
             </div>
-            
+            <div className="flex justify-center">
+                <h2 className=" bg-gray-800 text-white rounded-3xl px-4 py-2 cursor-pointer hover:bg-gray-100 hover:text-gray-900  ">Mon CV</h2>
+            </div>
                 <Resume />
                 
             

@@ -2,8 +2,9 @@ import React from 'react';
 
 const Resume = () => {
     return (
-        <div className=" flex flex-col justify-start items-center md:grid grid-flow-col grid-cols-6 ">
-            <div className="resume flex items-start flex-col col-span-3 mr-80  col-start-1">
+        <div className=" sm:flex flex-col justify-center items-start text-center ml-12  md:ml-48   lg:ml-8  lg:grid grid-flow-col grid-cols-6  ">
+            
+            <div className="resume flex items-start  flex-col col-span-3 lg:mr-28    col-start-1">
                 <h3>CV</h3>
                 <div className="rounded-6xl bg-white w-6 " >
                 0
@@ -38,7 +39,7 @@ const Resume = () => {
                 Bac L</p>
                 </div>
             </div>
-            <div className="resume flex items-start flex-col col-start-4 mr-80  ">
+            <div className="resume flex items-start flex-col col-start-4  lg:mr-28   ">
                 <h3>CV</h3>
                 <div className="rounded-6xl bg-white w-6 " >
                 0

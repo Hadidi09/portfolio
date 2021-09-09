@@ -20,7 +20,7 @@ const Description = () => {
                       }}
                     />
                 </h2>
-                <Image src={developer} alt="dev image" />
+                <Image src={developer} alt="dev image" className="sm:w-11/12 md:w-full" />
             </div>
                
                 <div className=" flex flex-col bg-blend-overlay justify-center items-center sm:flex-col lg:flex-row  ">
