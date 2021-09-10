@@ -2,9 +2,11 @@ import Carousel from "./Carousel";
 //import MaquetteCV from "./MaquetteCV";
 import Image from 'next/image'
 import raquette from '../public/test-maquette.png'
-import Nature from '../public/nature.jpg';
-import Dev from "../public/dev.png";
-import CV from "../public/cvtech.png";
+import OrinocoJs from '../public/orinocojs.png';
+import MyFood from "../public/myfood.png";
+import Groupomania from "../public/groupomania.png";
+import Sopiquant from "../public/sopiquant.png";
+import Chouette from "../public/chouette-agence.png";
 import Fade from "react-reveal/Fade";
 import Resume from "./Resume";
 
@@ -29,13 +31,11 @@ const Projets = () =>
                         <Image src={raquette} alt="livre" width={300} height={250} quality={100} className=" rounded-3xl   object-cover " />
                        
                         <div className="flex  p-1 flex-col">
+                             <h4 className="w-80 text-2xl ">Transformer une maquette en site web</h4>
                             <div className="source flex flex-row w-full">
-                                <div className=" w-max button bg-gray-700 text-white  p-4 shadow-2xl mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 focus:ring-opacity-25 focus:ring-gray-500  ">code source</div>
-                                <div className="w-max bg-gray-700 text-white  p-4 shadow-2xl  mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 ">lien</div>
-                            </div>
-                           
-                            <div className="w-80 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Officia a veritatis voluptate incidunt cumque optio?</div>
+                                <h5 className=" w-max button bg-gray-700 text-white  p-4 shadow-2xl mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 focus:ring-opacity-25 focus:ring-gray-500  ">code source</h5>
+                                <h5 className="w-max bg-gray-700 text-white  p-4 shadow-2xl  mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 ">lien</h5>
+                            </div>      
                         </div>
                     </div>
                    
@@ -45,43 +45,81 @@ const Projets = () =>
                     <Fade right>
                         <div className="content-maquette  " >
                    
-                        <Image src={Dev} alt="livre" width={300} height={250} quality={100} className=" rounded-3xl   object-cover " />
+                        <Image src={MyFood} alt="livre" width={300} height={250} quality={100} className=" rounded-3xl   object-cover " />
                     
-                        <div className="flex  p-1 flex-col">
-                        <div className="source flex flex-row w-full">
-                            <div className=" w-max button bg-gray-700 text-white  p-4 shadow-2xl mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 focus:ring-opacity-25 focus:ring-gray-500  ">code source</div>
-                            <div className="w-max bg-gray-700 text-white  p-4 shadow-2xl  mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 ">lien</div>
-                        </div>
-                        
-                        <div className="w-80 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Officia a veritatis voluptate incidunt cumque optio?</div>
+                            <div className="flex  p-1 flex-col">
+                                <h4 className="w-80 text-xl ">OHMYFOOD Dynamiser une page web avec des animations CSS</h4>
+                            <div className="source flex flex-row w-full">
+                                <h5 className=" w-max button bg-gray-700 text-white  p-4 shadow-2xl mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 focus:ring-opacity-25 focus:ring-gray-500  ">code source</h5>
+                                <h5 className="w-max bg-gray-700 text-white  p-4 shadow-2xl  mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 ">lien</h5>
+                            </div> 
                         </div>
                         </div> 
-                   </Fade>
-                    
-              
-               
+                   </Fade>    
                 </div>
                 <div className="cards-contents bg-gray-400 p-10 m-6 w-max md:w-11/12 md:m-1 lg:w-max lg:m-6  cursor-pointer rounded-3xl shadow-xl transiton duration-1000 ease-in-out transform hover:scale-110 ">
                     <Fade right>
                         <div className="content-maquette  " >
                    
-                            <Image src={Nature} alt="livre" width={300} height={250} quality={100} className=" rounded-3xl   object-cover " />
-                        
+                        <Image src={Chouette} alt="livre" width={300} height={250} quality={100} className=" rounded-3xl   object-cover " />
+                    
                             <div className="flex  p-1 flex-col">
+                                <h4 className="w-80 text-xl ">Chouette Agence Optimiser un site web existant  SEO</h4>
                             <div className="source flex flex-row w-full">
-                                <div className=" w-max button bg-gray-700 text-white  p-4 shadow-2xl mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 focus:ring-opacity-25 focus:ring-gray-500  ">code source</div>
-                                <div className="w-max bg-gray-700 text-white  p-4 shadow-2xl  mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 ">lien</div>
-                            </div>
-                            
-                            <div className="w-80 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Officia a veritatis voluptate incidunt cumque optio?</div>
-                            </div>
+                                <h5 className=" w-max button bg-gray-700 text-white  p-4 shadow-2xl mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 focus:ring-opacity-25 focus:ring-gray-500  ">code source</h5>
+                                <h5 className="w-max bg-gray-700 text-white  p-4 shadow-2xl  mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 ">lien</h5>
+                            </div> 
                         </div>
-                    </Fade>
+                        </div> 
+                   </Fade>    
+                </div>
+                <div className="cards-contents bg-gray-400 p-10 m-6 w-max md:w-11/12 md:m-1 lg:w-max lg:m-6  cursor-pointer rounded-3xl shadow-xl transiton duration-1000 ease-in-out transform hover:scale-110 ">
+                    <Fade right>
+                        <div className="content-maquette  " >
                    
-              
-               
+                        <Image src={OrinocoJs} alt="livre" width={300} height={250} quality={100} className=" rounded-3xl   object-cover " />
+                    
+                            <div className="flex  p-1 flex-col">
+                                <h4 className="w-80 text-xl ">ORINOCO Site E-commerce</h4>
+                            <div className="source flex flex-row w-full">
+                                <h5 className=" w-max button bg-gray-700 text-white  p-4 shadow-2xl mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 focus:ring-opacity-25 focus:ring-gray-500  ">code source</h5>
+                                <h5 className="w-max bg-gray-700 text-white  p-4 shadow-2xl  mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 ">lien</h5>
+                            </div> 
+                        </div>
+                        </div> 
+                   </Fade>    
+                </div>
+                <div className="cards-contents bg-gray-400 p-10 m-6 w-max md:w-11/12 md:m-1 lg:w-max lg:m-6  cursor-pointer rounded-3xl shadow-xl transiton duration-1000 ease-in-out transform hover:scale-110 ">
+                    <Fade right>
+                        <div className="content-maquette  " >
+                   
+                        <Image src={Sopiquant} alt="livre" width={300} height={250} quality={100} className=" rounded-3xl   object-cover " />
+                    
+                            <div className="flex  p-1 flex-col">
+                                <h4 className="w-80 text-xl ">SoPEKOCKO Sauce Piquante API sécurisée pour une application d'avis gastronomique</h4>
+                            <div className="source flex flex-row w-full">
+                                <h5 className=" w-max button bg-gray-700 text-white  p-4 shadow-2xl mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 focus:ring-opacity-25 focus:ring-gray-500  ">code source</h5>
+                                <h5 className="w-max bg-gray-700 text-white  p-4 shadow-2xl  mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 ">lien</h5>
+                            </div> 
+                        </div>
+                        </div> 
+                   </Fade>    
+                </div>
+                <div className="cards-contents bg-gray-400 p-10 m-6 w-max md:w-11/12 md:m-1 lg:w-max lg:m-6  cursor-pointer rounded-3xl shadow-xl transiton duration-1000 ease-in-out transform hover:scale-110 ">
+                    <Fade right>
+                        <div className="content-maquette  " >
+                   
+                        <Image src={Groupomania} alt="livre" width={300} height={250} quality={100} className=" rounded-3xl   object-cover " />
+                    
+                            <div className="flex  p-1 flex-col">
+                                <h4 className="w-80 text-xl ">Groupomania Réseaux social d'entreprise</h4>
+                            <div className="source flex flex-row w-full">
+                                <h5 className=" w-max button bg-gray-700 text-white  p-4 shadow-2xl mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 focus:ring-opacity-25 focus:ring-gray-500  ">code source</h5>
+                                <h5 className="w-max bg-gray-700 text-white  p-4 shadow-2xl  mx-2 rounded-3xl text-2xl hover:bg-gray-100 hover:text-gray-900 ">lien</h5>
+                            </div> 
+                        </div>
+                        </div> 
+                   </Fade>    
                 </div>
 
                 {/* <MaquetteCV />
